@@ -219,8 +219,8 @@
         background-size: 1.7rem 1.7rem;
         color: var(--text-primary);
         box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        height: 100vh;
-        overflow: hidden;
+        height: 100dvh;
+        overflow: hidden; /* This stops the "bounce" scroll effect */
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -255,7 +255,10 @@
         0 0 5px rgba(6, 182, 212, 0.1);  /* MODIFIED */
     }
 
-    .tab-navigation { background-color: var(--bg-secondary); }
+    .tab-navigation {
+        background-color: var(--bg-secondary);
+        overflow-x: auto; /* ADD THIS LINE */
+    }
     .tab-list { display: flex; list-style-type: none; padding: 0; margin: 0; }
     .tab-item { flex: 1 1 0; }
     .tab-button {
@@ -362,6 +365,7 @@
         bottom: 0;
         width: 2px;
         background-color: var(--border-color);
+        display: none; /* ADD THIS LINE */
     }
     .timeline .item-card {
         position: relative;
@@ -370,8 +374,10 @@
     }
 
     .content-area {
-        scrollbar-width: thin;
-        scrollbar-color: var(--accent-color) var(--bg-secondary);
+        padding: 2rem;
+        flex: 1;
+        overflow-y: auto;
+        min-height: 0; /* ADD THIS LINE */
     }
 
     .content-area::-webkit-scrollbar {
@@ -404,6 +410,7 @@
         background-color: var(--bg-primary);
         border: 3px solid var(--accent-color);
         z-index: 1;
+        display: none; /* ADD THIS LINE */
     }
 
     .header-text {
@@ -445,6 +452,18 @@
         animation-delay: @(delay.ToString("0.0", CultureInfo.InvariantCulture))s;
     }
     </text>
+    }
+
+    @@media (max-width: 640px) {
+    .content-area {
+        padding: 1rem; /* Reduce padding on the main content area */
+    }
+    .item-card {
+        padding: 0.5rem; /* Reduce padding inside the cards */
+    }
+    .timeline .item-card {
+        padding-left: 1rem; /* Reduce the large left padding for timeline items */
+    }
     }
 </style>
 
