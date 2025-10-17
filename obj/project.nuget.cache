@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UmHri5thZI4=",
+  "dgSpecHash": "EMQ6T47Ph8Q=",
   "success": true,
   "projectFilePath": "/Users/eduardodecastilhosgimenis/RiderProjects/BlazorApp1/ResumeWebsite/ResumeWebsite.csproj",
-  "expectedPackageFiles": [
-    "/Users/eduardodecastilhosgimenis/.nuget/packages/sixlabors.imagesharp/3.1.11/sixlabors.imagesharp.3.1.11.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

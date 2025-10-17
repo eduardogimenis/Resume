@@ -5,6 +5,34 @@
       "PackagePath": "staticwebassets/ResumeWebsite.bundle.scp.css"
     },
     {
+      "Id": "/Users/eduardodecastilhosgimenis/RiderProjects/BlazorApp1/ResumeWebsite/wwwroot/Images/az900.jpg",
+      "PackagePath": "staticwebassets/Images/az900.jpg"
+    },
+    {
+      "Id": "/Users/eduardodecastilhosgimenis/RiderProjects/BlazorApp1/ResumeWebsite/wwwroot/Images/comp_a.png",
+      "PackagePath": "staticwebassets/Images/comp_a.png"
+    },
+    {
+      "Id": "/Users/eduardodecastilhosgimenis/RiderProjects/BlazorApp1/ResumeWebsite/wwwroot/Images/comp_net.png",
+      "PackagePath": "staticwebassets/Images/comp_net.png"
+    },
+    {
+      "Id": "/Users/eduardodecastilhosgimenis/RiderProjects/BlazorApp1/ResumeWebsite/wwwroot/Images/comp_sec.png",
+      "PackagePath": "staticwebassets/Images/comp_sec.png"
+    },
+    {
+      "Id": "/Users/eduardodecastilhosgimenis/RiderProjects/BlazorApp1/ResumeWebsite/wwwroot/Images/csharp.png",
+      "PackagePath": "staticwebassets/Images/csharp.png"
+    },
+    {
+      "Id": "/Users/eduardodecastilhosgimenis/RiderProjects/BlazorApp1/ResumeWebsite/wwwroot/Images/sc100.png",
+      "PackagePath": "staticwebassets/Images/sc100.png"
+    },
+    {
+      "Id": "/Users/eduardodecastilhosgimenis/RiderProjects/BlazorApp1/ResumeWebsite/wwwroot/Images/sc200.png",
+      "PackagePath": "staticwebassets/Images/sc200.png"
+    },
+    {
       "Id": "/Users/eduardodecastilhosgimenis/RiderProjects/BlazorApp1/ResumeWebsite/wwwroot/app.css",
       "PackagePath": "staticwebassets/app.css"
     },

@@ -1,9 +1,7 @@
 // ResumeConfig.cs
 
-// A central place for all resume content
 public class ResumeConfig
 {
-    // These initializations are now valid because the records below will have parameterless constructors
     public HeaderConfig Header { get; set; } = new();
     public DashboardConfig Dashboard { get; set; } = new();
     public SkillsConfig Skills { get; set; } = new();
@@ -29,14 +27,22 @@ public record DashboardConfig
     public List<ContactInfo> ContactDetails { get; set; } = new();
 }
 
+// In Properties/ResumeConfig.cs
+
 public record ContactInfo
 {
     public string Type { get; set; } = "";
     public string Value { get; set; } = "";
-    // Adding a parameterless constructor for consistency
+    public string? Url { get; set; } 
+
     public ContactInfo() { } 
-    // Keep the constructor for easy initialization in ResumeData.cs
-    public ContactInfo(string type, string value) { Type = type; Value = value; }
+    
+    public ContactInfo(string type, string value, string? url = null) 
+    { 
+        Type = type; 
+        Value = value; 
+        Url = url; 
+    }
 }
 
 public record SkillsConfig
@@ -49,14 +55,12 @@ public record SkillsConfig
 public class UiConfig
 {
     // Font Sizes
-    public string ItemCardFontSize { get; set; } = "0.85rem"; // Changed from 0.75rem
-    public string ItemTitleFontSize { get; set; } = "1.15rem"; // Changed from 1.25rem
-    public string ItemSubtitleFontSize { get; set; } = "0.9rem";
+    public string ItemCardFontSize { get; set; } = "1.1rem"; // 
+    public string ItemTitleFontSize { get; set; } = "1.35rem"; // 1.15
+    public string ItemSubtitleFontSize { get; set; } = "0.9rem"; // 0.9
 }
 
-// The rest of your records can remain as they are, but for consistency, 
-// it's good practice to define them with properties too.
 public record Experience(string JobTitle, string Company, string DateRange, string[] Responsibilities);
 public record Education(string Degree, string Institution, string Year);
-public record Certification(string Name, string IssuingBody, string DateIssued);
+public record Certification(string Name, string IssuingBody, string DateIssued, string ImageUrl);
 public record Language(string Name, string Proficiency);

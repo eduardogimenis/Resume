@@ -9,21 +9,22 @@ public static class ResumeData
             // Use object initializer syntax { Property = Value }
             Header = new() 
             {
-                Name = "Jane 'Hex' Doe", 
-                Title = "Principal Security Engineer", 
-                ProfileImageUrl = "https://placehold.co/100x100/0891b2/ffffff?text=JD"
+                Name = "Eduardo Gimenis", 
+                Title = "Lead Global Sales & Assessments", 
+                ProfileImageUrl = "https://github.com/eduardogimenis/Resume/blob/main/profile_pic.jpeg?raw=true"
             },
             Dashboard = new()
             {
-                Bio = "A results-oriented and strategic Principal Security Engineer with over 10 years of experience...",
+                Bio = "A results-oriented and strategic Principal Security Engineer...",
                 ContactDetails = new List<ContactInfo>
                 {
-                    new("Email", "jane.doe@securenet.dev"),
-                    new("Phone", "(123) 456-7890"),
-                    new("Location", "Aliso Viejo, CA"),
-                    new("LinkedIn", "linkedin.com/in/janedoe-sec"),
-                    new("GitHub", "github.com/JaneHexDoe"),
-                    new("Blog", "janehexdoe.dev/blog")
+                    // Add the full URL as the third parameter
+                    new("Email", "eduardogimenis@gmail.com", "mailto:eduardogimenis@gmail.com"),
+                    new("Phone", "(425) 691-9855"), // No URL needed
+                    new("Location", "Aliso Viejo, CA"), // No URL needed
+                    new("LinkedIn", "Linkedin Link", "https://linkedin.com/in/eduardogimenis"),
+                    new("GitHub", "Github Link", "https://github.com/eduardogimenis"),
+                    new("Website", "Web Cluster", "https://gimenis.pro")
                 }
             },
             Skills = new()
@@ -33,13 +34,15 @@ public static class ResumeData
                 Languages = new List<Language> { new("English", "Native"), new("German", "Professional Working Proficiency") }
             },
             
-            // --- SAMPLE DATA INITIALIZATION ---
-
             Certifications = new List<Certification> 
             {
-                new("CompTIA A+ ce Certification", "CompTIA", "Nov 2025"),
-                new("Microsoft Certified: C# Developer Associate", "Microsoft", "Aug 2025"),
-                new("CompTIA Security+", "CompTIA", "May 2024")
+                new("CompTIA A+", "CompTIA", "Nov 2025", "/Images/comp_a.png"),
+                new("CompTIA Network+", "CompTIA", "Aug 2025", "/Images/comp_net.png"),
+                new("CompTIA Security+", "CompTIA", "May 2024", "/Images/comp_sec.png"),
+                new("C# Fundamentals", "Microsoft", "TBA", "/Images/csharp.png"),
+                new("AZ-900", "Microsoft", "TBA", "/Images/az900.jpg"),
+                new("SC-100", "Microsoft", "TBA", "/Images/sc100.png"),
+                new("SC-200", "Microsoft", "TBA", "/Images/sc200.png")
             },
             Experiences = new List<Experience> 
             {
