@@ -9,7 +9,7 @@ public static class ResumeData
             // Use object initializer syntax { Property = Value }
             Header = new() 
             {
-                Name = "Eduardo Gimenis", 
+                Name = "John", 
                 Title = "Lead Global Sales & Assessments", 
                 ProfileImageUrl = "https://github.com/eduardogimenis/Resume/blob/main/profile_pic.jpeg?raw=true"
             },
@@ -19,12 +19,12 @@ public static class ResumeData
                 ContactDetails = new List<ContactInfo>
                 {
                     // Add the full URL as the third parameter
-                    new("Email", "eduardogimenis@gmail.com", "mailto:eduardogimenis@gmail.com"),
-                    new("Phone", "(425) 691-9855"), // No URL needed
+                    new("Email", "johndoe@doe.com", "mailto:johndoe@doe.com"),
+                    new("Phone", "(123) 425-1233"), // No URL needed
                     new("Location", "Aliso Viejo, CA"), // No URL needed
-                    new("LinkedIn", "Linkedin Link", "https://linkedin.com/in/eduardogimenis"),
-                    new("GitHub", "Github Link", "https://github.com/eduardogimenis"),
-                    new("Website", "Web Cluster", "https://gimenis.pro")
+                    new("LinkedIn", "Linkedin Link", "https://linkedin.com/in/johndoe"),
+                    new("GitHub", "Github Link", "https://github.com/joeoe"),
+                    new("Website", "Web Cluster", "https://doejoe.pro")
                 }
             },
             Skills = new()
